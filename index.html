@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Domain Solutions — Websites for Small Businesses</title>
+  <meta name="description" content="Affordable, custom websites for small businesses. Stop overpaying for your website.">
+  <style>
+    :root {
+      --ink: #16181d;
+      --muted: #5b616e;
+      --line: #e4e6ea;
+      --bg: #fafaf8;
+      --accent: #1f5eff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    header { padding: 28px 0; }
+    header .wrap { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; letter-spacing: -0.01em; }
+    header a.cta-small {
+      font-size: 0.95rem; color: var(--ink); text-decoration: none;
+      border-bottom: 1.5px solid var(--ink);
+    }
+
+    .hero { padding: 80px 0 72px; }
+    .eyebrow {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--muted); margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      line-height: 1.1; letter-spacing: -0.03em; font-weight: 750;
+      margin-bottom: 24px;
+    }
+    h1 span { color: var(--accent); }
+    .lead { font-size: 1.2rem; color: var(--muted); max-width: 600px; margin-bottom: 36px; }
+
+    .btn {
+      display: inline-block; padding: 14px 26px; border-radius: 8px;
+      font-weight: 600; text-decoration: none; transition: transform .15s ease, background .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--ink); color: #fff; }
+    .btn-primary:hover { background: #000; }
+    .btn-ghost { color: var(--ink); border: 1.5px solid var(--line); margin-left: 10px; background: #fff; }
+    .btn-ghost:hover { border-color: var(--ink); }
+
+    section { padding: 64px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.6rem; letter-spacing: -0.02em; margin-bottom: 18px; }
+    p + p { margin-top: 14px; }
+    section p { color: #2f333b; font-size: 1.05rem; }
+
+    .points { list-style: none; margin-top: 28px; display: grid; gap: 14px; }
+    .points li { padding-left: 28px; position: relative; }
+    .points li::before {
+      content: ""; position: absolute; left: 0; top: 0.62em;
+      width: 12px; height: 2px; background: var(--accent);
+    }
+    .points strong { display: block; }
+    .points span { color: var(--muted); }
+
+    .example {
+      margin-top: 28px; padding: 28px; border: 1px solid var(--line);
+      border-radius: 12px; background: #fff;
+    }
+    .example a.link { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .example a.link:hover { text-decoration: underline; }
+
+    .limit {
+      font-size: clamp(1.4rem, 4vw, 1.9rem); line-height: 1.3;
+      letter-spacing: -0.02em; font-weight: 650; margin-top: 32px;
+    }
+
+    .contact { background: var(--ink); color: #fff; border-top: none; border-radius: 16px; padding: 56px 40px; margin: 64px 0; }
+    .contact h2 { color: #fff; }
+    .contact p { color: #c7cad1; }
+    .contact-list { margin-top: 28px; display: grid; gap: 12px; }
+    .contact-list a {
+      display: flex; align-items: center; gap: 14px; color: #fff; text-decoration: none;
+      font-size: 1.15rem; padding: 16px 20px; border: 1px solid #333842; border-radius: 10px;
+      transition: border-color .15s ease, background .15s ease;
+    }
+    .contact-list a:hover { border-color: #fff; background: #1f2229; }
+    .contact-list small { display: block; font-size: 0.75rem; color: #8b909b; text-transform: uppercase; letter-spacing: 0.1em; }
+
+    footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; }
+
+    @media (max-width: 520px) {
+      .btn-ghost { margin-left: 0; margin-top: 10px; }
+      .contact { padding: 40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="logo">Nathan Domain Solutions</div>
+      <a href="#contact" class="cta-small">Contact</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Websites for small businesses</p>
+      <h1>Stop overpaying<br>for your <span>website.</span></h1>
+      <p class="lead">
+        Too many small businesses are getting ripped off on their websites. I build
+        clean, fast, custom sites for a fraction of what the big agencies charge, and
+        I think they come out better too.
+      </p>
+      <a href="#contact" class="btn btn-primary">Get a quote</a>
+      <a href="https://nathansdomainsolutions.github.io/ExampleWebsite/" target="_blank" rel="noopener" class="btn btn-ghost">See an example →</a>
+    </div>
+
+    <section>
+      <h2>The problem</h2>
+      <p>
+        Small business owners are often charged thousands up front, then hit with
+        monthly fees, locked into clunky templates, and left waiting days for
+        simple changes. You end up paying premium prices for a site that looks
+        like everyone else's.
+      </p>
+      <ul class="points">
+        <li><strong>Lower cost</strong><span>Fair, straightforward pricing with no bloated agency markup.</span></li>
+        <li><strong>Built for you</strong><span>A site designed around your business, not a recycled template.</span></li>
+        <li><strong>Real person, real answers</strong><span>You work directly with me, start to finish.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>See what I can do</h2>
+      <p>Here's an example site to give you a ballpark of my work.</p>
+      <div class="example">
+        <p><a class="link" href="https://nathansdomainsolutions.github.io/ExampleWebsite/" target="_blank" rel="noopener">View the example website →</a></p>
+        <p style="color: var(--muted); font-size: 0.95rem;">This is just one example. Your site doesn't have to look anything like it.</p>
+      </div>
+      <p class="limit">Your imagination is the limit. Whatever you want your website to be, we can build it.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Let's talk about your website</h2>
+      <p>Tell me about your business and what you have in mind. I'll get back to you with a quote.</p>
+      <div class="contact-list">
+        <a href="tel:+17197661873">
+          <div><small>Call or text</small>(719) 766-1873</div>
+        </a>
+        <a href="mailto:oscargradisar@gmail.com?subject=Website%20inquiry">
+          <div><small>Email</small>oscargradisar@gmail.com</div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> Nathan Domain Solutions</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
